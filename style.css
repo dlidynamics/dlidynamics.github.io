@@ -26,15 +26,23 @@ nav{
      align-items:center;
  }
 
-#profile{
+#profilepic{
     width: 400px;
     height: 600px;
     object-fit: cover;
     float: left;
-    margin: 0 15px 0 0;
+    margin: 0 15px 15px 0;
     border-radius: 20px;
 }
-
+@media only screen and (max-width: 600px) {
+    #profilepic 
+    {display:none;}
+   }
+img.photo{
+    height: 100%;
+    width: 100%; 
+    object-fit:contain;
+}
  .paperlist ol li{
     margin: 0 0 5px 0;
  }
