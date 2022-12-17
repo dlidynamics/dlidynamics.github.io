@@ -38,11 +38,11 @@ nav{
     #profilepic 
     {display:none;}
    }
-img.photo{
+/* img.photo{
     height: 100%;
     width: 100%; 
     object-fit:contain;
-}
+} */
  .paperlist ol li{
     margin: 0 0 5px 0;
  }
