@@ -38,6 +38,10 @@ nav{
     #profilepic 
     {display:none;}
    }
+
+.back{
+    font-size:x-large
+}
 /* img.photo{
     height: 100%;
     width: 100%; 
