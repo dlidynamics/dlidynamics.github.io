@@ -22,6 +22,7 @@ display: inline-block; /* shrink to fit the content */
 a {
     color: black;  /* 改成你想要的颜色 */
     font-style: normal;
+    /*text-decoration: none;  removes underline */
 }
 a:hover {
     color: blue; /* color on hover */
@@ -107,6 +108,17 @@ p{
     text-align: justify;
     text-align-last: left;
   }
+ul.hlist {
+    list-style-type: none; /* remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul.hlist li {
+    display: inline; /* inline elements */
+    margin-right: 20px; /* spacing */
+}
+
 .paperlist{
     font-size: 20px;
 }
