@@ -22,7 +22,8 @@ section p {
 /* 中文字体（只用于汉字） */
 @font-face {
     font-family: 'YourChineseFont';
-    src: url('fonts/ShanHaiJiGuSongKe-JianFan-2.ttf') format('truetype');
+    src: url('fonts/ShanHaiJiGuSongKe-JianFan/ShanHaiJiGuSongKe-JianFan-2.woff2') format('woff2'),
+    url('fonts/ShanHaiJiGuSongKe-JianFan/ShanHaiJiGuSongKe-JianFan-2.woff') format('woff');
     unicode-range: U+4E00-9FFF; /* 中文常用字符范围 */
 }
 
