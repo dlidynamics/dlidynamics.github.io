@@ -1,5 +1,5 @@
 body{
-    width: 90%;           /* 浏览器宽度小于最大宽度时自适应 */
+              
 margin-left: 100px;
     background-color: #f5f8fc;  /* 淡蓝灰背景 */
     color: #1a1a1a;            /* 正文深灰色，阅读舒适 */
@@ -8,12 +8,23 @@ margin-left: 100px;
 }
 
 
-/*.container {
-
-}*/
-
-  a {
+.container {
+     width: 1200px;
+display: inline-block; /* shrink to fit the content */
+}
+.separator {
+    border: none;            /* remove default border */
+    height: 2px;             /* thickness of the line */
+    background-color: #333;  /* line color */
+    width: 100%;             /* full width of body */
+    margin: 20px 0;          /* optional vertical spacing */
+}
+a {
     color: black;  /* 改成你想要的颜色 */
+    font-style: normal;
+}
+a:hover {
+    color: blue; /* color on hover */
 }
 section p {
     line-height: 1.5; /* 2倍行高，也可以用 1.5em 或 px */
@@ -93,6 +104,8 @@ h2 {
 
 p{
     font-size: 20px;
+    text-align: justify;
+    text-align-last: left;
   }
 .paperlist{
     font-size: 20px;
@@ -115,7 +128,12 @@ p{
   .paperlist li {
     margin-top: 1em !important;  /* 每条论文底部间距，可调整数值 */
 } 
-
+ .paperlist ol li{
+    margin: 0 0 5px 0;
+ }
+ .paperlist ol li a{
+    font-style: normal;
+ }
 #intro{
     margin-left: 20px;
 }
@@ -151,12 +169,7 @@ nav{
     width: 100%; 
     object-fit:contain;
 } */
- .paperlist ol li{
-    margin: 0 0 5px 0;
- }
- .paperlist ol li a{
-    font-style: italic;
- }
+
  /* .nav-links{
      flex:1;
      text-align:center;
