@@ -1,20 +1,120 @@
 body{
-    margin-left: 20px;
-    background-color: burlywood;
+    width: 90%;           /* 浏览器宽度小于最大宽度时自适应 */
+margin-left: 100px;
+    background-color: #f5f8fc;  /* 淡蓝灰背景 */
+    color: #1a1a1a;            /* 正文深灰色，阅读舒适 */
+    font-family: "Arial", sans-serif;
 
 }
+
+
+/*.container {
+
+}*/
+
+  a {
+    color: black;  /* 改成你想要的颜色 */
+}
+section p {
+    line-height: 1.5; /* 2倍行高，也可以用 1.5em 或 px */
+}
+
+/* 中文字体（只用于汉字） */
+@font-face {
+    font-family: 'YourChineseFont';
+    src: url('fonts/ShanHaiJiGuSongKe-JianFan-2.ttf') format('truetype');
+    unicode-range: U+4E00-9FFF; /* 中文常用字符范围 */
+}
+
+/* 英文字体：Libre Baskerville Regular */
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 英文字体：Bold */
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* 英文字体：Italic */
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* 默认正文字体，英文用Libre Baskerville，中文用YourChineseFont */
+
+
 h1.pagetitle{
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 50px;    
+    /* margin-left: 20px; */
+    color: navy;
 }
 .header{
     min-height: 100vh;
     width: 100%; 
-    background-image: linear-gradient(rgba(255, 219, 118, 0.7));
+  /*   background-image: linear-gradient(rgba(207, 56, 82, 0.7));*/
     background-position: center;
     background-size: cover;
     position:relative;
  }
+
+ h1,h2,h3{
+    font-family: 'Libre Baskerville', 'YourChineseFont', serif;
+ }
+h1 {
+    font-size: 40px;
+    color: #0d3b66;  /* 深藏青色 */
+    font-weight: bold;
+  }
+  
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: #1d6fa5;  /* 中蓝色 */
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    color: #1d6fa5;  /* 中蓝色 */
+    font-weight: bold;
+  }
+
+p{
+    font-size: 20px;
+  }
+.paperlist{
+    font-size: 20px;
+}
+.paperlist .title {
+    display: block;       /* 独占一行 */
+    color: black;  /* 和 H1 相同的大标题色 */
+    font-weight: bold;
+    margin-bottom: 0.3em; /* 题目与下面信息之间的间距 */
+  }
+  .paperlist .title .authors {
+    font-weight: normal;    /* 括号内作者不加粗 */
+    color: inherit;         /* 继承题目的颜色，也可以单独设置颜色 */
+}
+  .paperlist .meta {
+    display: block;       /* 出版信息整体一行 */
+    color: #333;          /* 可选：正文颜色 */
+    font-size: 0.95em;    /* 可选：稍微小一点 */
+  }
+  .paperlist li {
+    margin-top: 1em !important;  /* 每条论文底部间距，可调整数值 */
+} 
+
 #intro{
     margin-left: 20px;
 }
@@ -25,6 +125,9 @@ nav{
      justify-content: space-between;
      align-items:center;
  }
+.nav-links{
+    font-size: 20px;
+}
 
 #profilepic{
     width: 400px;
