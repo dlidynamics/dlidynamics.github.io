@@ -1,6 +1,9 @@
-body{
-              
-margin-left: 100px;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{      
+/*margin-left: 100px;*/
     background-color: #f5f8fc;  /* 淡蓝灰背景 */
     color: #1a1a1a;            /* 正文深灰色，阅读舒适 */
     font-family: "Arial", sans-serif;
@@ -9,8 +12,9 @@ margin-left: 100px;
 
 
 .container {
-     width: 1200px;
-display: inline-block; /* shrink to fit the content */
+    max-width: 1200px;   /* container won’t exceed 1200px */
+    width: 90%;           /* shrinks with browser width */
+    margin: 0 auto;       /* center horizontally */
 }
 .separator {
     border: none;            /* remove default border */
@@ -19,6 +23,33 @@ display: inline-block; /* shrink to fit the content */
     width: 100%;             /* full width of body */
     margin: 20px 0;          /* optional vertical spacing */
 }
+
+/* Top navigation bar */
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* 子元素靠右对齐 */
+    width: 100%;               /* 占满导航栏宽度 */
+}
+
+.topnav ul li {
+    margin-left: 20px; /* 各条目之间的间距 */
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: normal;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.topnav ul li a:hover {
+    color: navy;
+}
+
 a {
     color: black;  /* 改成你想要的颜色 */
     font-style: normal;
@@ -115,6 +146,7 @@ ul.hlist {
 }
 
 ul.hlist li {
+    font-size: 20px;
     display: inline; /* inline elements */
     margin-right: 20px; /* spacing */
 }
