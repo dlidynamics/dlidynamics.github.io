@@ -12,6 +12,20 @@ body{
     width: 90%;           /* shrinks with browser width */
     margin: 0 auto;       /* center horizontally */
 }
+/* 默认宽屏时，两端对齐正文 */
+.container p,
+.container li {
+    text-align: justify;
+}
+
+/* 浏览器宽度不足时，改为左对齐 */
+@media (max-width: 1199px) {
+    .container p,
+    .container li {
+        text-align: left;
+    }
+}
+
 .separator {
     border: none;            /* remove default border */
     height: 2px;             /* thickness of the line */
