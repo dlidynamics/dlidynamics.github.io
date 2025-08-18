@@ -110,9 +110,26 @@ section p {
 
 
 h1.pagetitle{
+     display: flex;
+  justify-content: flex-start; /* 左端对齐 */
+  align-items: baseline;
+  gap: 0.6em;
+  white-space: nowrap;     /* 禁止换行 */
+  margin: 0;
+  line-height: 1.2;
+
+  /* 随视口宽度缩放字号：最小16px，理想6vw，最大40px */
+  font-size: clamp(16px, 6vw, 40px);
+    
     margin-top: 50px;    
     /* margin-left: 20px; */
     color: navy;
+}
+@media (max-width: 360px) {
+  .pagetitle {
+    font-size: clamp(14px, 5.2vw, 32px);
+    gap: 0.4em;
+  }
 }
 .header{
     min-height: 100vh;
