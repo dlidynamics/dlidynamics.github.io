@@ -187,16 +187,19 @@ ul.hlist li {
     display: block;       /* 独占一行 */
     color: black;  /* 和 H1 相同的大标题色 */
     font-weight: bold;
-    margin-bottom: 0.3em; /* 题目与下面信息之间的间距 */
+    margin-bottom: 0.2em;
   }
-  .paperlist .title .authors {
+  .paperlist .authors {
     font-weight: normal;    /* 括号内作者不加粗 */
-    color: inherit;         /* 继承题目的颜色，也可以单独设置颜色 */
+    color: black;         /* 继承题目的颜色，也可以单独设置颜色 */
+    font-size: 0.95em;    /* 可选：稍微小一点 */
+    margin-bottom: 0.2em;  
 }
   .paperlist .meta {
     display: block;       /* 出版信息整体一行 */
     color: #333;          /* 可选：正文颜色 */
     font-size: 0.95em;    /* 可选：稍微小一点 */
+     margin-top: 0;
   }
   .paperlist li {
     margin-top: 1em !important;  /* 每条论文底部间距，可调整数值 */
