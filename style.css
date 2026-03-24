@@ -240,6 +240,18 @@ nav{
 .back{
     font-size:x-large
 }
+
+.coursename {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+
+
+
+
 /* img.photo{
     height: 100%;
     width: 100%; 
